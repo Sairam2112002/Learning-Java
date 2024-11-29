@@ -1,22 +1,0 @@
-
-`
-java:S1192="JDefine a constant instead of duplicating this literal "Sri Lanka" 4 times.(¡Ý²ß
-\
-java:S1192<"FDefine a constant instead of duplicating this literal "India" 3 times.(Î¢ÄÎ
-c
-java:S1192"MDefine a constant instead of duplicating this literal "Vector - 4: " 4 times.(ÙéàÕ
-h
-java:S1192"MDefine a constant instead of duplicating this literal "Vector - 2: " 5 times.(ö£•Öùÿÿÿÿ
-h
-java:S1192"MDefine a constant instead of duplicating this literal "Vector - 3: " 5 times.(ùÂ¸ãÿÿÿÿÿ
-i
-java:S1192"NDefine a constant instead of duplicating this literal "Vector - 1: " 14 times.(ú£Æ©úÿÿÿÿ
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Æ„Û®ÿÿÿÿÿ
-€
-java:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(—ôÐÈúÿÿÿÿ
-{
-java:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(Ø¦Åò
-{
-java:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(†¸Éƒ
-{
-java:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(Žž¨»
