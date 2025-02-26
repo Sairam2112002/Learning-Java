@@ -9,23 +9,23 @@ import java.util.Collections;
 import java.util.List;
 
 @Getter @Setter
-public class Person implements Comparable<Person> {
+public class ComparableInterface implements Comparable<ComparableInterface> {
     private String name;
     private int age;
 
-    public Person(String name, int age) {
+    public ComparableInterface(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
     @Override
-    public int compareTo(Person person) {
+    public int compareTo(ComparableInterface person) {
         return this.age - person.age;
     }
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "ComparableInterface{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}' +
@@ -35,13 +35,12 @@ public class Person implements Comparable<Person> {
     public static void main(String[] args) {
         Faker faker = new Faker();
 
-        List<Person> personList = new ArrayList<>();
+        List<ComparableInterface> personList = new ArrayList<>();
         for(int i = 1; i <= 10; i++) {
-            personList.add(new Person(faker.name().firstName(), faker.number().numberBetween(1, 100)));
+            personList.add(new ComparableInterface(faker.name().firstName(), faker.number().numberBetween(1, 100)));
         }
 
         Collections.sort(personList);
         System.out.println(personList);
-
     }
 }
