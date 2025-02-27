@@ -1,6 +1,5 @@
 package collectionframework;
 
-import com.github.javafaker.Faker;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -33,12 +32,17 @@ public class ComparableInterface implements Comparable<ComparableInterface> {
     }
 
     public static void main(String[] args) {
-        Faker faker = new Faker();
-
         List<ComparableInterface> personList = new ArrayList<>();
-        for(int i = 1; i <= 10; i++) {
-            personList.add(new ComparableInterface(faker.name().firstName(), faker.number().numberBetween(1, 100)));
-        }
+        personList.add(new ComparableInterface("John Doe", 30));
+        personList.add(new ComparableInterface("Jane Smith", 25));
+        personList.add(new ComparableInterface("Alice Johnson", 45));
+        personList.add(new ComparableInterface("Bob Brown", 20));
+        personList.add(new ComparableInterface("Michael Davis", 35));
+        personList.add(new ComparableInterface("Linda Wilson", 28));
+        personList.add(new ComparableInterface("Chris Moore", 38));
+        personList.add(new ComparableInterface("Patricia Taylor", 42));
+        personList.add(new ComparableInterface("Helen White", 32));
+        personList.add(new ComparableInterface("Rachel Green", 29));
 
         Collections.sort(personList);
         System.out.println(personList);
