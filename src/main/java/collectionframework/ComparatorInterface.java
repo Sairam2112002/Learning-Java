@@ -1,19 +1,18 @@
 package collectionframework;
 
 import com.github.javafaker.Faker;
-import pojos.FootballPlayers;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ComparatorInterface {
     public static void main(String[] args) {
-        List<FootballPlayers> footballPlayersList = new ArrayList<>();
+        List<FootballPlayersPojo> footballPlayersList = new ArrayList<>();
 
         Faker faker = new Faker();
         for(int i = 1; i<= 10; i++) {
             footballPlayersList
-                    .add(new FootballPlayers(
+                    .add(new FootballPlayersPojo(
                             faker.name().firstName(),
                             faker.number().numberBetween(1, 10),
                             faker.number().numberBetween(21, 40)));

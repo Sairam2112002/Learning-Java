@@ -79,9 +79,7 @@ public class Streams {
     public static void main(String[] args) {
         List<String> namesList = Arrays.asList("John", "Jane", "Adam", "Tom", "Eve", "Anna", "Mike", "Jennifer");
 
-        /* Intermediate Operations
-         *
-         */
+        // Intermediate Operations
         System.out.println("filter Operation:");
         filterOperation(namesList);
         System.out.println();
@@ -94,9 +92,7 @@ public class Streams {
         sortedOperation(namesList);
         System.out.println();
 
-        /* Intermediate Operations
-         *
-         */
+        // Terminal Operations
         System.out.println("forEach Operation:");
         forEachOperation(namesList);
         System.out.println();

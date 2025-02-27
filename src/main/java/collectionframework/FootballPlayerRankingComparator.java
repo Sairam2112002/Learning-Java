@@ -1,15 +1,13 @@
 package collectionframework;
 
-import pojos.FootballPlayers;
-
 import java.util.Comparator;
 
-public class FootballPlayerRankingComparator implements Comparator<FootballPlayers> {
+public class FootballPlayerRankingComparator implements Comparator<FootballPlayersPojo> {
     /*
      * Comparing Football players in ascending order based on ranking
      */
     @Override
-    public int compare(FootballPlayers player1, FootballPlayers player2) {
+    public int compare(FootballPlayersPojo player1, FootballPlayersPojo player2) {
         return player1.getRanking() - player2.getRanking();
     }
 }

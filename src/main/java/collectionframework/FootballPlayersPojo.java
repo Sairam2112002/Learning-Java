@@ -1,15 +1,15 @@
-package pojos;
+package collectionframework;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter @Setter
-public class FootballPlayers {
+public class FootballPlayersPojo {
     private String name;
     private int ranking;
     private int age;
 
-    public FootballPlayers(String name, int ranking, int age) {
+    public FootballPlayersPojo(String name, int ranking, int age) {
         this.name = name;
         this.ranking = ranking;
         this.age = age;
@@ -17,7 +17,7 @@ public class FootballPlayers {
 
     @Override
     public String toString() {
-        return "FootballPlayers{" +
+        return "FootballPlayersPojo{" +
                 "name='" + name + '\'' +
                 ", ranking=" + ranking +
                 ", age=" + age +
