@@ -6,7 +6,7 @@ public class StandardClass {
      *
      * instance, static, final, static-final variables are allowed
      *
-     * In general, final variable is also an instance variable and static-final variable is a static variable. Hence
+     * In general, final variable is also an instance variable and static-final variable is a static variable. Hence,
      * corresponding rules apply for final and static-final variables
      */
     private String outerInstanceVariable;

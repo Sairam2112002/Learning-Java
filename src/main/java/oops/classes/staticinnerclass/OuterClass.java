@@ -1,5 +1,8 @@
 package oops.classes.staticinnerclass;
 
+/*
+ * static inner class is a type of nested class i.e. it is a class defined inside another class
+ */
 public class OuterClass {
     private String outerInstanceVariable;
     private static String outerStaticVariable;
