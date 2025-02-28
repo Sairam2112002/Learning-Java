@@ -62,7 +62,7 @@ public class OuterClass {
              */
 
             /*
-             * instance methods can access instance variable of the enclosing block
+             * instance methods can access only instance variables of the enclosing block
              */
             private void localInstanceMethod() {
                 System.out.println(methodVariable);
