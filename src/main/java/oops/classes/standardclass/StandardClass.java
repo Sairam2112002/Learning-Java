@@ -9,16 +9,16 @@ public class StandardClass {
      * In general, final variable is also an instance variable and static-final variable is a static variable. Hence,
      * corresponding rules apply for final and static-final variables
      */
-    private String outerInstanceVariable;
-    private static String outerStaticVariable;
-    private final String OUTER_FINAL_VARIABLE = "OUTER_FINAL_VARIABLE";
-    private static final String OUTER_STATIC_FINAL_VARIABLE = "OUTER_STATIC_FINAL_VARIABLE";
+    private String instanceVariable;
+    private static String staticVariable;
+    private final String FINAL_VARIABLE = "FINAL_VARIABLE";
+    private static final String STATIC_FINAL_VARIABLE = "STATIC_FINAL_VARIABLE";
 
     /*
      * Multiple constructors are allowed i.e. constructor overloading is possible
      */
     public StandardClass(String outerInstanceVariable) {
-        this.outerInstanceVariable = outerInstanceVariable;
+        this.instanceVariable = outerInstanceVariable;
     }
 
     /*
@@ -30,16 +30,16 @@ public class StandardClass {
      * corresponding rules apply for final and static-final methods
      */
     public void outerInstanceMethod() {
-        System.out.println("This is an instance method in Outer class");
+        System.out.println("This is an instance method in Normal class");
     }
     public static void outerStaticMethod() {
-        System.out.println("This is a static method in Outer class");
+        System.out.println("This is a static method in Normal class");
     }
     public final void outerFinalMethod() {
-        System.out.println("This is a final method in Outer class");
+        System.out.println("This is a final method in Normal class");
     }
     public static void outerStaticFinalMethod() {
-        System.out.println("This is a static-final method in Outer class");
+        System.out.println("This is a static-final method in Normal class");
     }
 
     public static void main(String[] args) {
@@ -51,16 +51,16 @@ public class StandardClass {
         /*
          * instance members can only be accesses with object reference
          */
-        System.out.println(standardClass.outerInstanceVariable);
-        System.out.println(standardClass.OUTER_FINAL_VARIABLE);
+        System.out.println(standardClass.instanceVariable);
+        System.out.println(standardClass.FINAL_VARIABLE);
         standardClass.outerInstanceMethod();
         standardClass.outerFinalMethod();
 
         /*
          * static members can only be accesses with class name
          */
-        System.out.println(StandardClass.outerStaticVariable);
-        System.out.println(StandardClass.OUTER_STATIC_FINAL_VARIABLE);
+        System.out.println(StandardClass.staticVariable);
+        System.out.println(StandardClass.STATIC_FINAL_VARIABLE);
         StandardClass.outerStaticMethod();
         StandardClass.outerStaticFinalMethod();
     }

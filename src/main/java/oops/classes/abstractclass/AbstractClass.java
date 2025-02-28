@@ -41,19 +41,15 @@ public abstract class AbstractClass {
     public void instanceMethod() {
         System.out.println("This is an instance method");
     }
-
     public final void finalMethod() {
         System.out.println("This is a final method");
     }
-
     public static void staticMethod() {
         System.out.println("This is a static method");
     }
-
     public static final void staticFinalMethod() {
         System.out.println("This is a static-final method");
     }
-
     public abstract void abstractMethod();
 }
 

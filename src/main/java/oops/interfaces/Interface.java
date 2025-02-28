@@ -11,7 +11,7 @@ package oops.interfaces;
  *
  * Interfaces can contain main method
  */
-public interface LearningInterface {
+public interface Interface {
     /*
      * Only public access modifier is allowed
      *
@@ -49,6 +49,7 @@ public interface LearningInterface {
      */
     default void defaultMethod() {
         System.out.println("This is a default method in an interface");
+        privateMethod();
     }
 
     /*
@@ -80,19 +81,19 @@ public interface LearningInterface {
     }
 }
 
-class ChildCLass implements LearningInterface {
+class ChildClass implements Interface {
     @Override
     public void abstractMethod() {
         System.out.println("This is the abstract method implemented in a child class");
     }
 
     public static void main(String[] args) {
-        LearningInterface learningInterface = new ChildCLass();
+        Interface learningInterface = new ChildClass();
 
-        System.out.println(LearningInterface.STATIC_FINAL_VARIABLE);
+        System.out.println(Interface.STATIC_FINAL_VARIABLE);
 
         learningInterface.abstractMethod();
         learningInterface.defaultMethod();
-        LearningInterface.staticMethod();
+        Interface.staticMethod();
     }
 }
