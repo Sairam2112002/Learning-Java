@@ -71,7 +71,7 @@ class ChildClass extends AbstractClass {
         /*
          * Abstract class is instantiated through the child class
          */
-        AbstractClass childClass = new ChildClass("instanceVariable");
+        AbstractClass childClass = new ChildClass("STATIC_FINAL_VARIABLE");
 
         childClass.abstractMethod();
     }
