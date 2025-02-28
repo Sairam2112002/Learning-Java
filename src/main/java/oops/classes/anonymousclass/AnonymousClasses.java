@@ -90,6 +90,35 @@ public class AnonymousClasses {
         anonymousClassOfAbstractClass.abstractMethod();
         anonymousClassOfAbstractClass.instanceMethod();
         anonymousClassOfAbstractClass.finalMethod();
+
+        Interface anonymousClassOfInterface = new Interface() {
+            /*
+             * Apart from the below property, anonymous class created for an interface follows the same
+             * properties as the anonymous class created for a normal class
+             */
+
+            /*
+             * When anonymous class is created for an interface, the abstract methods of the parent abstract
+             * class must be implemented
+             */
+            @Override
+            public void abstractMethod() {
+                System.out.println("This is an abstract method overridden in the anonymous class");
+            }
+        };
+
+        /*
+         * Overridden abstract methods and default methods of the interface can be accessed using the
+         * anonymous class object
+         */
+        anonymousClassOfInterface.abstractMethod();
+        anonymousClassOfInterface.defaultMethod();
+
+        /*
+         * static methods and variable of the interface can be accessed using the Interface name
+         */
+        Interface.staticMethod();
+        System.out.println(Interface.STATIC_FINAL_VARIABLE);
     }
 }
 
