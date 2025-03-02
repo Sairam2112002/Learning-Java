@@ -29,16 +29,16 @@ public class StandardClass {
      * In general, final method is also an instance method and static-final method is a static method. Hence,
      * corresponding rules apply for final and static-final methods
      */
-    public void outerInstanceMethod() {
+    public void instanceMethod() {
         System.out.println("This is an instance method in Normal class");
     }
-    public static void outerStaticMethod() {
+    public static void staticMethod() {
         System.out.println("This is a static method in Normal class");
     }
-    public final void outerFinalMethod() {
+    public final void finalMethod() {
         System.out.println("This is a final method in Normal class");
     }
-    public static void outerStaticFinalMethod() {
+    public static void staticFinalMethod() {
         System.out.println("This is a static-final method in Normal class");
     }
 
@@ -53,15 +53,15 @@ public class StandardClass {
          */
         System.out.println(standardClass.instanceVariable);
         System.out.println(standardClass.FINAL_VARIABLE);
-        standardClass.outerInstanceMethod();
-        standardClass.outerFinalMethod();
+        standardClass.instanceMethod();
+        standardClass.finalMethod();
 
         /*
          * static members can only be accesses with class name
          */
         System.out.println(StandardClass.staticVariable);
         System.out.println(StandardClass.STATIC_FINAL_VARIABLE);
-        StandardClass.outerStaticMethod();
-        StandardClass.outerStaticFinalMethod();
+        StandardClass.staticMethod();
+        StandardClass.staticFinalMethod();
     }
 }
