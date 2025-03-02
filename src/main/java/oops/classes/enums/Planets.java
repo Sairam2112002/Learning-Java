@@ -18,6 +18,9 @@ import java.util.Arrays;
 @Getter
 public enum Planets {
     /*
+     * enum constants are implicitly static and final i.e. once they are created, they cannot be modified and can only be
+     * accessed via enum class name
+     *
      * enum constants can override instance method, allowing each constant to behave differently
      */
     MERCURY(1, 57_910_000, 3.30e23) {
